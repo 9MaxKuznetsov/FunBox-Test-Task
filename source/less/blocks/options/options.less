@@ -1,8 +1,26 @@
 .options {
-  width: 320px;
+  width: 452px;
   margin: 0 auto;
+  padding-top: 14px;
 }
 
 .options__title {
-  color: white;
-}
+  font-family: "Exo 2.0", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .options {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .options {
+    width: @desktop-width;
+  }
+}
