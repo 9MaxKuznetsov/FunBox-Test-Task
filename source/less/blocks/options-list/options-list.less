@@ -12,22 +12,22 @@
 
 @media (min-width: @tablet-width) {
   .options-list {
-    width: @tablet-width;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: @tablet-width;
   }
 
   .options-list__item {
-    margin-bottom: 30px;
     width: 320px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .options-list {
-    width: @desktop-width;
     justify-content: space-between;
+    width: @desktop-width;
   }
 }

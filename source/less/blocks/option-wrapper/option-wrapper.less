@@ -1,11 +1,19 @@
 .option-wrapper {
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- width: 320px;
- min-height: 482px;
- border-radius: 12px;
- background:
-   linear-gradient(135deg, transparent 30px, @light-blue 0) top left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  min-height: 480px;
+
+  background: linear-gradient(135deg, transparent 31px, @light-blue 0) top left;
+  border-radius: 12px;
+}
+
+.option-wrapper:hover {
+  background: linear-gradient(135deg, transparent 31px, #d91667 0) top left;
+}
+
+.option-wrapper:hover .option::after {
+  background-color: #d91667;
 }
