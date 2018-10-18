@@ -5,9 +5,54 @@
   align-items: center;
   width: 320px;
   min-height: 480px;
+  border: none;
+  text-align: left;
 
   background: linear-gradient(135deg, transparent 31px, @light-blue 0) top left;
   border-radius: 12px;
+}
+
+.option-wrapper-hover {
+  background: linear-gradient(135deg, transparent 31px, @light-blue-hover 0) top left;
+}
+
+.option-wrapper-hover .option::after {
+  background-color: @light-blue-hover;
+}
+
+.option-wrapper--selected {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  min-height: 480px;
+  border: none;
+  text-align: left;
+
+  background: linear-gradient(135deg, transparent 31px, @pink 0) top left;
+  border-radius: 12px;
+}
+
+.option-wrapper--selected .option::after {
+    content: "";
+    position: absolute;
+    right: 11px;
+    bottom: 12px;
+
+    min-width: 80px;
+    min-height: 80px;
+
+    background-color: @pink;
+    border-radius: 50%;
+}
+
+.option-wrapper--selected-hover {
+  background: linear-gradient(135deg, transparent 31px, #e62e7a 0) top left;
+}
+
+.option-wrapper--selected-hover .option::after {
+  background-color: #e62e7a;
 }
 
 /*
