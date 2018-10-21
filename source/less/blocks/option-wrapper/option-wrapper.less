@@ -1,14 +1,12 @@
 .option-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 320px;
   min-height: 480px;
-  border: none;
+
   text-align: left;
 
   background: linear-gradient(135deg, transparent 31px, @light-blue 0) top left;
+  border: none;
   border-radius: 12px;
 }
 
@@ -21,30 +19,28 @@
 }
 
 .option-wrapper--selected {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 320px;
   min-height: 480px;
-  border: none;
+
   text-align: left;
 
   background: linear-gradient(135deg, transparent 31px, @pink 0) top left;
+  border: none;
   border-radius: 12px;
 }
 
 .option-wrapper--selected .option::after {
-    content: "";
-    position: absolute;
-    right: 11px;
-    bottom: 12px;
+  content: "";
+  position: absolute;
+  right: 11px;
+  bottom: 12px;
 
-    min-width: 80px;
-    min-height: 80px;
+  min-width: 80px;
+  min-height: 80px;
 
-    background-color: @pink;
-    border-radius: 50%;
+  background-color: @pink;
+  border-radius: 50%;
 }
 
 .option-wrapper--selected-hover {
