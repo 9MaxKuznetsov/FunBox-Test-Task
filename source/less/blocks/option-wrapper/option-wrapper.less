@@ -9,13 +9,21 @@
 
   text-align: left;
 
-  background: linear-gradient(135deg, transparent 31px, @light-blue 0) top left;
+  background: linear-gradient(135deg, transparent 31px, @light-blue-hover 0) top left;
   border: none;
   border-radius: 12px;
 
   -webkit-appearance: button;
      -moz-appearance: button;
           appearance: button;
+}
+
+.option-wrapper:hover {
+  background: linear-gradient(135deg, transparent 31px, @light-blue 0) top left;
+}
+
+.option-wrapper:hover .weight {
+  background-color: @light-blue;
 }
 
 .option-wrapper--selected {
@@ -32,6 +40,32 @@
   border: none;
   border-radius: 12px;
 }
+
+.option-wrapper--selected:hover {
+  background: linear-gradient(135deg, transparent 31px, #e62e7a 0) top left;
+}
+
+.option-wrapper--selected:hover .weight {
+  background-color: #e62e7a;
+}
+
+.option-wrapper--selected .option__title {
+    display: none;
+}
+
+.option-wrapper--selected .option__title--hover {
+    color: #e52e7a;
+    display: block;
+}
+
+.option-wrapper--selected:hover .option__title {
+    display: block;
+}
+
+.option-wrapper--selected:hover .option__title--hover {
+    display: none;
+}
+
 
 .option-wrapper--selected .weight {
   background-color: @pink;
