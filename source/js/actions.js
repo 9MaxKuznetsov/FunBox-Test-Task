@@ -1,9 +1,17 @@
-const items = document.querySelectorAll('.option-wrapper');
-const buttons = document.querySelectorAll('.buy__button');
+var items = document.querySelectorAll('.options-list__item');
+var buttons = document.querySelectorAll('.buy__button');
+var toggleWrapperClass = function (card) {
+  card.classList.toggle('option-wrapper--selected');
+};
 
 
 [].forEach.call(items, (item) => {
-  item.addEventListener('click', () => {
-    item.classList.toggle('option-wrapper--selected');
+  var card = item.querySelector('.option-wrapper');
+  var button = item.querySelector('.buy__button');
+  card.addEventListener('click', () => {
+    toggleWrapperClass(card);
+  });
+  button.addEventListener('click', () => {
+    toggleWrapperClass(card);
   });
 });
