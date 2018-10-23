@@ -9,10 +9,9 @@
   <link rel="preload" href="fonts/trebucbd.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="fonts/trebucit.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="fonts/Exo2.0-Thin.otf" as="font" type="font/otf" crossorigin>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
-
 <body>
   <main class="main">
     <section class="options">
@@ -33,9 +32,11 @@
               </article>
             </button>
           <p class="buy">Чего сидишь? Порадуй котэ, <button class="buy__button"><span>купи.</span></button></p>
+          <p class="buy-description">Печень утки разварная с артишоками.</p>
+          <p class="disabled-description">Печалька, с фуа-гра закончился.</p>
         </li>
         <li class="options-list__item">
-          <button class="option-wrapper">
+          <button class="option-wrapper option-wrapper--selected">
             <article class="option">
               <span class="option__title">Сказочное заморское яство</span>
               <span class="option__title option__title--hover">Котэ не одобряет?</span>
@@ -48,10 +49,12 @@
               </div>
             </article>
           </button>
-          <p class="buy">Чего сидишь? Порадуй котэ, <button class="buy__button"><span>купи.</span></button></p>
+          <p class="buy buy--hide">Чего сидишь? Порадуй котэ, <button class="buy__button"><span>купи.</span></button></p>
+          <p class="buy-description buy-description--show">Головы щучьи с чесноком да свежайшая сёмгушка.</p>
+          <p class="disabled-description">Печалька, с рыбой закончился.</p>
         </li>
         <li class="options-list__item">
-          <button class="option-wrapper">
+          <button class="option-wrapper" disabled>
             <article class="option">
               <span class="option__title">Сказочное заморское яство</span>
               <span class="option__title option__title--hover">Котэ не одобряет?</span>
@@ -65,6 +68,8 @@
             </article>
           </button>
           <p class="buy">Чего сидишь? Порадуй котэ, <button class="buy__button"><span>купи.</span></button></p>
+          <p class="buy-description">Филе из цыплят с трюфелями в бульоне.</p>
+          <p class="disabled-description">Печалька, с курой закончился.</p>
         </li>
       </ul>
     </section>

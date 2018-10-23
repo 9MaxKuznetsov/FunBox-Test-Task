@@ -33,12 +33,17 @@
   align-items: center;
   width: 320px;
   min-height: 480px;
+  padding: 0;
 
   text-align: left;
 
   background: linear-gradient(135deg, transparent 31px, @pink 0) top left;
   border: none;
   border-radius: 12px;
+
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
 }
 
 .option-wrapper--selected:hover {
@@ -66,7 +71,33 @@
     display: none;
 }
 
-
 .option-wrapper--selected .weight {
   background-color: @pink;
+}
+
+.option-wrapper[disabled] {
+  background: linear-gradient(135deg, transparent 31px, @disabled 0) top left;
+}
+
+.option-wrapper[disabled] .option__title {
+  color: @disabled;
+  opacity: 0.5;
+}
+
+.option-wrapper[disabled] .option__name {
+  color: @disabled;
+  opacity: 0.5;
+}
+
+.option-wrapper[disabled] .option__description {
+  color: @disabled;
+  opacity: 0.5;
+}
+
+.option-wrapper[disabled] .option__weight {
+  background-color: @disabled;
+}
+
+.option-wrapper[disabled] .option__image {
+  opacity: 0.5;
 }

@@ -1,4 +1,6 @@
 .buy {
+  display: block;
+
   font-size: 13px;
   line-height: 16px;
   text-align: center;
@@ -10,6 +12,7 @@
 
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 .buy__button span {
@@ -18,5 +21,10 @@
 
 .buy__button:hover span {
   color: @light-blue-hover;
+
   border-color: @light-blue-hover;
+}
+
+.buy--hide {
+  display: none;
 }
